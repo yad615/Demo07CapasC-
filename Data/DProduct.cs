@@ -14,8 +14,9 @@ namespace Data
     public class DProduct
     {
 
-        public  string _connectionString = "Server=HUGO\\SQLEXPRESS01;Database=InvoicesCDB;" +
-            "Integrated Security=true; TrustServerCertificate=true";
+        public string _connectionString =
+            "Server=localhost\\SQLEXPRESS;Database=InvoicesCDB;User ID=alcantaraTecsup;Password=Tecsup2020;TrustServerCertificate=true;";
+
         public List<Product> Read()
         {
             List<Product> products = new List<Product>();
