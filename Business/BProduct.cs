@@ -16,5 +16,11 @@ namespace Business
             var products = (new DProduct()).Read();
             return products;
         }
+
+        public void Create(Product product)
+        {
+            //Llamar a la capa de datos
+            (new DProduct()).Create(product);
+        }
     }
 }

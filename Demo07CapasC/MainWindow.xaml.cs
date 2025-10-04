@@ -26,5 +26,26 @@ namespace Demo07CapasC
             var business = new BProduct();
             dataGrid.ItemsSource = business.Read();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var business = new BProduct();
+                business.Create(new Entity.Product
+                {
+                    Name = txtName.Text,
+                    Price = Convert.ToDecimal(txtPrice.Text),
+                    Stock = Convert.ToInt32(txtStock.Text),
+                });
+                MessageBox.Show("Registro Exitoso");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
     }
 }

@@ -8,6 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,4">
+                <Label Content="Nombre:" Width="80" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtName" Width="220" MinWidth="120" />
+            </StackPanel>
+
+            <!-- Precio -->
+            <StackPanel Orientation="Horizontal" Margin="0,4">
+                <Label Content="Precio:" Width="80" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPrice" Width="220" MinWidth="120" />
+            </StackPanel>
+
+            <!-- Stock -->
+            <StackPanel Orientation="Horizontal" Margin="0,4">
+                <Label Content="Stock:" Width="80" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtStock" Width="220" MinWidth="120" />
+            </StackPanel>
+            <Button Content="Save" Click="Button_Click_1"></Button>
             <Button Content="Get" Click="Button_Click"></Button>
             <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Height="300"></DataGrid>
         </StackPanel>
