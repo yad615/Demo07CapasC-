@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel>
+            <Button Content="Get" Click="Button_Click"></Button>
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Height="300"></DataGrid>
+        </StackPanel>
 
     </Grid>
 </Window>

@@ -8,7 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Business;
 namespace Demo07CapasC
 {
     /// <summary>
@@ -19,6 +19,12 @@ namespace Demo07CapasC
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var business = new BProduct();
+            dataGrid.ItemsSource = business.Read();
         }
     }
 }
